@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="icon" href="/assets/Logo_Tandem.jpg">
+    <title>Document</title>
+</head>
+    <div class="container">
+        <div class="topDiv">
+            <div class="container__search">
+                <span class="container__search--box">
+                    <button class="buttonSearch">
+                        <figure>
+                            <img src="../assets/busqueda-icon.svg" alt="">
+                        </figure>
+                    </button>
+                </span>
+                <input type="text" name="search" id="search" class="--input" placeholder="Search" autocomplete="off">
+            </div>
+        </div>
+        <div class="mediumDiv">
+            <div class="mediumDiv__leftContainer">
+                <h2>Menu</h2>
+            </div>
+            <div class="mediumDiv__main" id="main">
+                <p>Tasks</p>
+                <input type="text" name="AddTasks" class="inputAdd" id="inputAdd" placeholder="Add a Task">
+                <button id="addButton" class="addButton" onclick="addTasks()">ADD</button>
+                    <ul id="list" class="tasksList">
+                        <li>Buy Water</li>
+                        <li>Read a book</li>
+                        <li>Go to the Gym</li>
+                    </ul>
+            </div>
+        </div>
+        <footer class="footer">
+            Hecho por Carlos L. Zavarce |&nbsp;&nbsp;
+            <a href="https://github.com/KrlosAren">
+                <figure>
+                    <img src="/https://img.icons8.com/material-rounded/24/ffd628/github.png"/>
+                </figure>
+            </a>
+        </footer>
+    </div>
+    <script src="/src/toDoList.js"></script>
+</body>
+</html>
